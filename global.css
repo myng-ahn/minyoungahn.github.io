@@ -1,0 +1,28 @@
+:root {
+  --FONT: "Source Sans Pro", "Lora", "Roboto", sans-serif;
+  --FONT-COLOR: #1f1f1f;
+  --MEDIUM-SIZE: 16px;
+  --MEDIUM-ENLARGED: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--FONT);
+  color: var(--FONT-COLOR);
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0px 0px 30px;
+}
