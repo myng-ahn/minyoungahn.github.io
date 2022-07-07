@@ -8,9 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+Pro:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+Pro:wght@200&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/css/global.css" />
     <link rel="stylesheet" type="text/css" href="/css/homepage.css" />
   </head>
@@ -19,29 +25,183 @@
       <header id="header">
         <ul id="navbar">
           <li><a class="nav-btn" href="#about">About</a></li>
-          <li><a class="nav-btn" href="#research">Research</a></li>
-          <li><a class="nav-btn" href="#volunteering">Volunteering</a></li>
+          <li><a class="nav-btn" href="#experience">Experience</a></li>
+          <li><a class="nav-btn" href="#projects">Projects</a></li>
         </ul>
         <hr />
       </header>
 
-      <div class="main">
+      <div class="landing-content">
         <div id="profile-pic-container">
           <img id="profile-pic" src="images/minyoungahn.jpeg" />
         </div>
-
-        <h1 id="title">Hi, I'm Minyoung</h1>
+        <h1 class="greeting">Hi, I'm Minyoung</h1>
         <p>
-          I'm a programmer and an aspiring researcher in the intersection of
-          computer science and healthcare.
+          I'm a programmer, aspiring researcher, and a third year undergraduate
+          at UCSD interested in expanding the intersection of computer science
+          and healthcare.
         </p>
       </div>
 
+      <h2
+        class="section-header"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+        id="education"
+      >
+        Education
+      </h2>
+      <div
+        class="section education"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+      >
+        <div class="date eduction-date">
+          <p class="start-date education-start-date">Sept 2020</p>
+          <p class="end-date education-end-date">June 2024</p>
+        </div>
+        <div class="item education-item">
+          <div class="item-title education-item-title">
+            University of California, San Diego
+          </div>
+          <div class="item-body education-item-body">
+            <div class="item-bullet education-item-bullet">
+              B.S. Computer Science with a specialization in bioinformatics,
+              GPA: 4.0
+            </div>
+            <div class="item-bullet education-item-bullet">
+              Clubs and activities: Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2
+        class="section-header"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+        id="experience"
+      >
+        Experience
+      </h2>
+      <div
+        class="section experience"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+      >
+        <div class="date experience-date">
+          <p class="start-date experience-start-date">Sept 2021</p>
+          <p class="end-date experience-end-date">Present</p>
+        </div>
+        <div class="item experience-item">
+          <div class="item-title experience-item-title">
+            Undergraduate Research Assistant, <a href="">Chi Lab</a>
+          </div>
+          <div class="item-body experience-item-body">
+            <div class="item-bullet experience-item-bullet">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="item-bullet experience-item-bullet">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="date experience-date">
+          <p class="start-date experience-start-date">Jan 2021</p>
+          <p class="end-date experience-end-date">Present</p>
+        </div>
+        <div class="item experience-item">
+          <div class="item-title experience-item-title">
+            Intern, <a href="">Nanotools Bioscience</a>
+          </div>
+          <div class="item-body experience-item-body">
+            <div class="item-bullet experience-item-bullet">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="item-bullet experience-item-bullet">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="date experience-date">
+          <p class="start-date experience-start-date">Sept 2020</p>
+          <p class="end-date experience-end-date">Mar 2021</p>
+        </div>
+        <div class="item experience-item">
+          <div class="item-title experience-item-title">
+            Research Assistant,
+            <a href="">Microelectronic Embedded Systems Laboratory</a>
+          </div>
+          <div class="item-body experience-item-body">
+            <div class="item-bullet experience-item-bullet">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="item-bullet experience-item-bullet">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2
+        class="section-header"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+        id="projects"
+      >
+        Projects
+      </h2>
+      <div
+        class="section projects"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="900"
+      >
+        <div class="date projects-date">
+          <p class="end-date projects-start-date">Sept 2021</p>
+          <p class="start-date projects-end-date">Present</p>
+        </div>
+        <div class="item projects-item">
+          <div class="item-title projects-item-title">
+            Thyroid Disease Symptom Checker
+          </div>
+          <div class="item-body projects-item-body">
+            <div class="item-bullet projects-item-bullet">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="item-bullet projects-item-bullet">
+              Cxercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.lubs and activities: Ut enim ad minim veniam, quis
+              nostrud e
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer>
-        <hr />
+        <!-- <hr /> -->
       </footer>
     </div>
 
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>

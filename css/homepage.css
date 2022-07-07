@@ -4,6 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
+  text-align: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -18,6 +19,7 @@
   position: relative;
   display: block;
   width: 100%;
+  margin: 0px 0px 45px;
 }
 
 #navbar {
@@ -32,27 +34,39 @@
 #navbar li {
   display: inline;
   margin: 0px 10px 0px;
-  font-size: var(--MEDIUM-SIZE);
-  transition: 0.4s;
-}
-
-#navbar li:hover {
-  font-size: var(--MEDIUM-ENLARGED);
+  font-size: var(--FONT-SIZE-MEDIUM);
 }
 
 .nav-btn {
   text-align: center;
   text-decoration: none;
+  transition: 0.4s;
 }
 
-.main {
+.nav-btn::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0.15px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--FONT-COLOR);
+  transform: scaleX(0);
+  /* transform-origin: bottom right; */
+  transition: transform 0.3s;
+}
+
+.nav-btn:hover::after {
+  /* font-size: var(--MEDIUM-ENLARGED);  */
+  /* transform-origin: bottom left; */
+  transform: scaleX(1);
+}
+
+.landing-content {
   text-align: center;
-}
-
-h1#title {
-  margin: 0px 0px 30px;
-  font-family: "Lora";
-  font-weight: normal;
+  font-size: var(--FONT-SIZE-MEDIUM);
+  margin-bottom: 60px;
 }
 
 #profile-pic-container {
@@ -67,4 +81,57 @@ h1#title {
   height: 190px;
   width: 190px;
   border-radius: 50%;
+}
+
+h1.greeting {
+  margin: 0px 0px 30px;
+  font-family: "Roboto Slab";
+  font-weight: normal;
+}
+
+h2.section-header {
+  text-decoration: none;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section {
+  display: grid;
+  gap: 50px 20px;
+  grid-template-columns: max-content auto;
+  grid-template-rows: min-content;
+  row-gap: 25px;
+  padding-bottom: 50px;
+}
+
+.date {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: right;
+}
+
+.start-date,
+.end-date {
+  font-size: var(--FONT-SIZE-SMALL);
+  font-weight: 700;
+}
+
+.item {
+  grid-column-start: 2;
+  text-align: left;
+}
+
+.item-title {
+  font-size: var(--FONT-SIZE-MEDIUM);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.item-bullet {
+  margin-bottom: 0px;
+}
+
+.item-bullet:before {
+  content: "◦";
 }
