@@ -135,3 +135,8 @@ h2.section-header {
 .item-bullet:before {
   content: "◦";
 }
+
+.social-icon {
+  font-size: 20px;
+  margin: 30px 20px;
+}
