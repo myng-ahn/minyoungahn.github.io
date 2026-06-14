@@ -1,15 +1,13 @@
 .wrapper {
   justify-content: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
+  width: 65vw;
+  margin: 10vh auto 0;
   text-align: center;
 }
 
-@media screen and (max-width: 650px) {
-  wrapper {
-    width: 65%;
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -106,25 +104,26 @@ h2.section-header {
 }
 
 .date {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column: 1;
   text-align: right;
 }
 
 .start-date,
 .end-date {
+  font-family: "Google Sans Code";
   font-size: var(--FONT-SIZE-SMALL);
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .item {
-  grid-column-start: 2;
+  grid-column: 2;
   text-align: left;
 }
 
 .item-title {
+  font-family: "Google Sans Code";
   font-size: var(--FONT-SIZE-MEDIUM);
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 
@@ -133,7 +132,7 @@ h2.section-header {
 }
 
 .item-bullet:before {
-  content: "◦";
+  content: "◦ ";
 }
 
 .social-icon {
